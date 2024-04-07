@@ -1,0 +1,8 @@
+
+
+function printPermutations($str){
+
+	
+	
+	
+}
