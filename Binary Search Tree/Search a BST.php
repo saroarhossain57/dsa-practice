@@ -51,7 +51,7 @@ class BinarySearchTree {
             return $this->search($root->left, $value);
         } else {
             return $this->search($root->right, $value);
-        }
+        } 
     }
 }
 
