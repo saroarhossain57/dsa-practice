@@ -3,6 +3,9 @@
 
 function bubbleSort(array $arr): array {
     $len = count($arr);
+
+    $loop = 0;
+
     for ($i = 0; $i < $len; $i++) {
         $swapped = FALSE;
         for ($j = 0; $j < $len - $i - 1; $j++) {
@@ -12,9 +15,14 @@ function bubbleSort(array $arr): array {
                 $arr[$j] = $tmp;
                 $swapped = TRUE;
             }
+
+            $loop++;
         }
         if(! $swapped) break;
     }
+
+    echo "Loop: " . $loop . "\n";
+
     return $arr;
 }
 
